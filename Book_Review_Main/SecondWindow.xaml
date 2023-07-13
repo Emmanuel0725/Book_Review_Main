@@ -1,0 +1,108 @@
+﻿<Window x:Class="Book_Review_Main.SecondWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Book_Review_Main"
+        mc:Ignorable="d"
+        Title="SecondWindow" Height="750" Width="900">
+    <Grid>
+        <Grid Margin="0,0,0,-6" RenderTransformOrigin="0.5,0.5" Height="NaN" Width="NaN">
+            <Rectangle HorizontalAlignment="Left" Height="170" Margin="25,475,0,0" Stroke="Black" VerticalAlignment="Top" Width="270" Fill="#FFE6E6E6" StrokeThickness="0"/>
+            <Rectangle HorizontalAlignment="Center" Height="60" VerticalAlignment="Top" Width="903" Stroke="#FF252422" Fill="#FF252422" StrokeThickness="0"/>
+            <Rectangle HorizontalAlignment="Center" Height="37" Margin="0,697,0,0" Stroke="Black" VerticalAlignment="Top" Width="900" Fill="#FFCCC5B9" StrokeThickness="0"/>
+            <TextBlock HorizontalAlignment="Left" Height="16" Margin="50,708,0,0" TextWrapping="Wrap" Text="NOVELNOTES COPYRIGHT © 2023. ALL RIGHTS RESERVED. " VerticalAlignment="Top" Width="373" Foreground="#FF403D39" FontFamily="Consolas"/>
+            <TextBlock HorizontalAlignment="Left" Height="29" Margin="50,20,0,0" TextWrapping="Wrap" Text="NovelNotes" VerticalAlignment="Top" Width="144" Foreground="#FFEB5E28" FontSize="20" FontFamily="Consolas"/>
+            <Rectangle HorizontalAlignment="Center" Height="45" Margin="0,60,0,0" Stroke="Black" VerticalAlignment="Top" Width="904" Fill="#FFFBFBFA" StrokeThickness="0"/>
+            <TextBox HorizontalAlignment="Left" Height="19" Margin="50,71,0,0" TextWrapping="Wrap" Text="Search for title or author" VerticalAlignment="Top" Width="298" Background="#FFFBFBFA" TextChanged="TextBox_TextChanged" FontFamily="Consolas"/>
+            <Image x:Name="image" HorizontalAlignment="Left" Height="15" Margin="325,73,0,0" VerticalAlignment="Top" Width="15" Source="/icons8-search-30.png" RenderTransformOrigin="4.295,-2.573">
+                <Image.OpacityMask>
+                    <ImageBrush ImageSource="/icons8-search-30.png"/>
+                </Image.OpacityMask>
+            </Image>
+            <TextBox HorizontalAlignment="Left" Height="14" Margin="494,25,0,0" TextWrapping="Wrap" Text="Hi, User123!" VerticalAlignment="Top" Width="110" TextChanged="TextBox_TextChanged_1" Background="#FF252422" Foreground="White" BorderThickness="0,0,0,0" FontFamily="Consolas" FontSize="13"/>
+            <TextBox HorizontalAlignment="Left" Height="14" Margin="658,25,0,0" TextWrapping="Wrap" Text="Settings" VerticalAlignment="Top" Width="110" TextChanged="TextBox_TextChanged_1" Background="#FF252422" Foreground="White" BorderThickness="0,0,0,0" FontFamily="Consolas" FontSize="13"/>
+            <TextBox HorizontalAlignment="Left" Height="14" Margin="790,25,0,0" TextWrapping="Wrap" Text="Logout" VerticalAlignment="Top" Width="110" TextChanged="TextBox_TextChanged_1" Background="#FF252422" Foreground="White" BorderThickness="0,0,0,0" FontFamily="Consolas" FontSize="13"/>
+            <TextBlock HorizontalAlignment="Left" Height="23" Margin="10,120,0,0" TextWrapping="Wrap" Text="Featured Books" VerticalAlignment="Top" Width="126" FontFamily="Consolas" FontSize="15"/>
+            <Rectangle HorizontalAlignment="Left" Height="1" Margin="10,142,0,0" Stroke="#FFEB5E28" VerticalAlignment="Top" Width="115" Fill="#FFEB5E28"/>
+            <Button Content="Button" HorizontalAlignment="Left" Height="168" Margin="50,170,0,0" VerticalAlignment="Top" Width="127" Command="{Binding ElementName=image, Mode=OneWay}">
+                <Button.Background>
+                    <ImageBrush ImageSource="/the-interpretation-of-dreams.jpg"/>
+                </Button.Background>
+            </Button>
+            <Button Content="Button" HorizontalAlignment="Left" Height="168" Margin="215,170,0,0" VerticalAlignment="Top" Width="127" Command="{Binding ElementName=image, Mode=OneWay}">
+                <Button.Background>
+                    <ImageBrush ImageSource="/subtle-art-of-not-giving-a-f.jpg"/>
+                </Button.Background>
+            </Button>
+            <Button Content="Button" HorizontalAlignment="Center" Height="168" Margin="0,170,0,0" VerticalAlignment="Top" Width="128" Command="{Binding ElementName=image, Mode=OneWay}">
+                <Button.Background>
+                    <ImageBrush ImageSource="/paper-towns.jpg"/>
+                </Button.Background>
+            </Button>
+            <Button Content="Button" HorizontalAlignment="Left" Height="168" Margin="556,170,0,0" VerticalAlignment="Top" Width="127" Command="{Binding ElementName=image, Mode=OneWay}">
+                <Button.Background>
+                    <ImageBrush ImageSource="/norwegian-wood.jpg"/>
+                </Button.Background>
+            </Button>
+            <Button Content="Button" HorizontalAlignment="Left" Height="168" Margin="723,170,0,0" VerticalAlignment="Top" Width="127" Command="{Binding ElementName=image, Mode=OneWay}" RenderTransformOrigin="0.831,0.503">
+                <Button.Background>
+                    <ImageBrush ImageSource="/kafka-on-the-shore.jpg"/>
+                </Button.Background>
+            </Button>
+            <TextBlock HorizontalAlignment="Left" Height="30" Margin="50,347,0,0" TextWrapping="Wrap" Text="The Interpretation of Dreams" VerticalAlignment="Top" Width="126" FontFamily="Consolas" FontWeight="Bold"/>
+            <TextBlock HorizontalAlignment="Left" Height="30" Margin="51,377,0,0" TextWrapping="Wrap" Text="Sigmund Freud" VerticalAlignment="Top" Width="126" FontFamily="Consolas" Foreground="#FF909090" FontStyle="Italic"/>
+            <TextBlock HorizontalAlignment="Left" Height="30" Margin="215,347,0,0" TextWrapping="Wrap" Text="The Subtle Art of Not Giving a F*ck" VerticalAlignment="Top" Width="126" FontFamily="Consolas" FontWeight="Bold"/>
+            <TextBlock HorizontalAlignment="Left" Height="30" Margin="216,377,0,0" TextWrapping="Wrap" Text="Mark Manson" VerticalAlignment="Top" Width="126" FontFamily="Consolas" Foreground="#FF909090" FontStyle="Italic"/>
+            <TextBlock HorizontalAlignment="Center" Height="30" Margin="0,347,0,0" TextWrapping="Wrap" Text="Paper Towns" VerticalAlignment="Top" Width="126" FontFamily="Consolas" FontWeight="Bold"/>
+            <TextBlock HorizontalAlignment="Center" Height="30" Margin="0,363,0,0" TextWrapping="Wrap" Text="John Green" VerticalAlignment="Top" Width="126" FontFamily="Consolas" Foreground="#FF909090" FontStyle="Italic"/>
+            <TextBlock HorizontalAlignment="Left" Height="30" Margin="557,346,0,0" TextWrapping="Wrap" Text="Norwegian Wood" VerticalAlignment="Top" Width="126" FontFamily="Consolas" FontWeight="Bold"/>
+            <TextBlock HorizontalAlignment="Left" Height="30" Margin="557,362,0,0" TextWrapping="Wrap" Text="Haruki Murakami" VerticalAlignment="Top" Width="126" FontFamily="Consolas" Foreground="#FF909090" FontStyle="Italic"/>
+            <TextBlock HorizontalAlignment="Left" Height="23" Margin="10,415,0,0" TextWrapping="Wrap" Text="Featured Reviews" VerticalAlignment="Top" Width="138" FontFamily="Consolas" FontSize="15"/>
+            <Rectangle HorizontalAlignment="Left" Height="1" Margin="10,436,0,0" Stroke="#FFEB5E28" VerticalAlignment="Top" Width="131" Fill="#FFEB5E28" StrokeThickness="0"/>
+            <Rectangle HorizontalAlignment="Center" Height="170" Margin="0,475,0,0" Stroke="Black" VerticalAlignment="Top" Width="270" Fill="#FFE6E6E6" StrokeThickness="0"/>
+            <Rectangle HorizontalAlignment="Left" Height="170" Margin="607,475,0,0" Stroke="Black" VerticalAlignment="Top" Width="270" Fill="#FFE6E6E6" StrokeThickness="0"/>
+            <Ellipse HorizontalAlignment="Left" Height="36" Margin="40,485,0,0" Stroke="Black" VerticalAlignment="Top" Width="39" RenderTransformOrigin="40.288,0.984" StrokeThickness="0">
+                <Ellipse.Fill>
+                    <ImageBrush ImageSource="/sexy_anime_by_killuazoldyck1412_dftkudl-400t.jpg"/>
+                </Ellipse.Fill>
+            </Ellipse>
+            <TextBlock HorizontalAlignment="Left" Height="23" Margin="91,485,0,0" TextWrapping="Wrap" Text="emmsfam" VerticalAlignment="Top" Width="138" FontFamily="Consolas" FontSize="10"/>
+            <TextBlock HorizontalAlignment="Center" Height="23" Margin="0,485,0,0" TextWrapping="Wrap" Text="eosgnb" VerticalAlignment="Top" Width="138" FontFamily="Consolas" FontSize="10"/>
+            <TextBlock HorizontalAlignment="Left" Height="23" Margin="665,485,0,0" TextWrapping="Wrap" Text="aenz" VerticalAlignment="Top" Width="138" FontFamily="Consolas" FontSize="10"/>
+            <TextBlock HorizontalAlignment="Left" Height="30" Margin="40,530,0,0" TextWrapping="Wrap" Text="1984 by George Orwell" VerticalAlignment="Top" Width="173" FontFamily="Consolas" FontWeight="Bold"/>
+            <TextBlock HorizontalAlignment="Left" Height="91" Margin="40,549,0,0" TextWrapping="Wrap" Text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat..." VerticalAlignment="Top" Width="255" FontFamily="Consolas" FontSize="10"/>
+            <TextBlock HorizontalAlignment="Left" Height="30" Margin="332,530,0,0" TextWrapping="Wrap" Text="1984 by George Orwell" VerticalAlignment="Top" Width="173" FontFamily="Consolas" FontWeight="Bold"/>
+            <TextBlock HorizontalAlignment="Left" Height="91" Margin="332,549,0,0" TextWrapping="Wrap" Text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat..." VerticalAlignment="Top" Width="255" FontFamily="Consolas" FontSize="10"/>
+            <TextBlock HorizontalAlignment="Left" Height="30" Margin="622,530,0,0" TextWrapping="Wrap" Text="1984 by George Orwell" VerticalAlignment="Top" Width="173" FontFamily="Consolas" FontWeight="Bold"/>
+            <TextBlock HorizontalAlignment="Left" Height="91" Margin="622,549,0,0" TextWrapping="Wrap" Text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat..." VerticalAlignment="Top" Width="255" FontFamily="Consolas" FontSize="10"/>
+            <TextBlock HorizontalAlignment="Left" Height="30" Margin="724,346,0,0" TextWrapping="Wrap" Text="Kafka on the shore" VerticalAlignment="Top" Width="126" FontFamily="Consolas" FontWeight="Bold"/>
+            <TextBlock HorizontalAlignment="Left" Height="30" Margin="724,362,0,0" TextWrapping="Wrap" Text="Haruki Murakami" VerticalAlignment="Top" Width="126" FontFamily="Consolas" Foreground="#FF909090" FontStyle="Italic"/>
+            <Ellipse HorizontalAlignment="Left" Height="36" Margin="332,485,0,0" Stroke="Black" VerticalAlignment="Top" Width="40" RenderTransformOrigin="40.288,0.984" StrokeThickness="0">
+                <Ellipse.Fill>
+                    <ImageBrush ImageSource="/9fe4186a-5b74-4a81-9bde-926d34041897.jpg"/>
+                </Ellipse.Fill>
+                <Ellipse.OpacityMask>
+                    <ImageBrush ImageSource="/sexy_anime_by_killuazoldyck1412_dftkudl-400t.jpg"/>
+                </Ellipse.OpacityMask>
+            </Ellipse>
+            <Ellipse HorizontalAlignment="Left" Height="36" Margin="622,485,0,0" Stroke="Black" VerticalAlignment="Top" Width="38" RenderTransformOrigin="40.288,0.984" StrokeThickness="0">
+                <Ellipse.Fill>
+                    <ImageBrush ImageSource="/lafunee-1675442899580.jpg" Stretch="Fill"/>
+                </Ellipse.Fill>
+            </Ellipse>
+            <Image HorizontalAlignment="Left" Height="17" Margin="768,25,0,0" VerticalAlignment="Top" Width="18" Source="/icons8-logout-50.png">
+                <Image.OpacityMask>
+                    <ImageBrush ImageSource="/icons8-logout-50.png"/>
+                </Image.OpacityMask>
+            </Image>
+            <Image HorizontalAlignment="Left" Height="20" Margin="626,22,0,0" VerticalAlignment="Top" Width="23" Source="/settings-256.png">
+                <Image.OpacityMask>
+                    <ImageBrush ImageSource="/settings-256.png"/>
+                </Image.OpacityMask>
+            </Image>
+
+        </Grid>
+
+    </Grid>
+</Window>
